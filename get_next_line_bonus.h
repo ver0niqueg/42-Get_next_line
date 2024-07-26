@@ -5,13 +5,13 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: vgalmich <vgalmich@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/07/16 14:24:41 by vgalmich          #+#    #+#             */
+/*   Created: 2024/07/25 14:24:41 by vgalmich          #+#    #+#             */
 /*   Updated: 2024/07/25 20:35:16 by vgalmich         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef GET_NEXT_LINE_H
-# define GET_NEXT_LINE_H
+#ifndef GET_NEXT_LINE_BONUS_H
+# define GET_NEXT_LINE_BONUS_H
 
 # include <unistd.h>
 # include <stdio.h>
@@ -21,6 +21,10 @@
 
 # ifndef BUFFER_SIZE
 #  define BUFFER_SIZE 42
+# endif
+
+# ifndef OPEN_MAX
+#  define OPEN_MAX 1024
 # endif
 
 size_t	gnl_strlen(char *s);
