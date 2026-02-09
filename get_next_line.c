@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: vgalmich <vgalmich@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/07/16 14:24:41 by vgalmich          #+#    #+#             */
-/*   Updated: 2024/07/25 20:35:16 by vgalmich         ###   ########.fr       */
+/*   Created: 2024/07/16 14:19:41 by vgalmich          #+#    #+#             */
+/*   Updated: 2024/07/27 15:58:20 by vgalmich         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -98,36 +98,3 @@ char	*get_next_line(int fd)
 	stash = ft_update_stash(stash);
 	return (line);
 }
-
-/*
-int	main(void)
-{
-	char	*line;
-	int		i;
-	int		fd1;
-	int		fd2;
-	int		fd3;
-
-	fd1 = open("H2G2.txt", O_RDONLY);
-	fd2 = open("hey.txt", O_RDONLY);
-	fd3 = open("test3.txt", O_RDONLY);
-	i = 1;
-	while (i < 7)
-	{
-		line = get_next_line(fd1);
-		printf("line [%02d]: %s", i, line);
-		free(line);
-		line = get_next_line(fd2);
-		printf("line [%02d]: %s", i, line);
-		free(line);
-		line = get_next_line(fd3);
-		printf("line [%02d]: %s", i, line);
-		free(line);
-		i++;
-	}
-	close(fd1);
-	close(fd2);
-	close(fd3);
-	return (0);
-}
-*/
